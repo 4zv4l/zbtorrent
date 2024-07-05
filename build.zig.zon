@@ -1,0 +1,18 @@
+.{
+    .name = "zbitorrent",
+
+    .version = "0.0.1",
+
+    .dependencies = .{
+        .bencode = .{
+            .url = "git+https://github.com/4zv4l/zbencode#9d2b9ef0b5442b76c50e745c24925c6b63fa0e47",
+            .hash = "1220cbbce78984195ed81fa737bec414fb385cb85b3c6176ecf2072f1b8c586fe1aa",
+        },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
