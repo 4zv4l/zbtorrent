@@ -1,2 +1,3 @@
-# zbitorrent
-bitorrent protocol in zig
+# zbtorrent
+
+BitTorrent protocol in zig
