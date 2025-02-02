@@ -16,6 +16,7 @@ pub const TorrentInfo = struct {
         try writer.print("name         : {s}\n", .{self.name});
         try writer.print("size         : {}\n", .{sizeFmt(@intCast(self.length))});
         try writer.print("tracker      : {s}\n", .{self.announce});
+        try writer.print("pieces       : {d}\n", .{self.pieces.len});
         try writer.print("pieces length: {d}\n", .{sizeFmt(@intCast(self.piece_length))});
         try writer.print("infohash     : {}\n", .{hexFmt(&self.infohash)});
     }
