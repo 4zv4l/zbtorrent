@@ -9,6 +9,14 @@ pub fn build(b: *std.Build) void {
         .target = target,
         .optimize = optimize,
     });
-    const bencode = b.dependency("bencode", .{}).module("bencode");
+    const bencode = b.dependency("zbencode", .{}).module("bencode");
     mod.addImport("bencode", bencode);
+
+    const run_unit_tests = b.addRunArtifact(b.addTest(.{
+        .root_module = mod,
+        .target = target,
+        .optimize = optimize,
+    }));
+    const test_step = b.step("test", "Run unit tests");
+    test_step.dependOn(&run_unit_tests.step);
 }

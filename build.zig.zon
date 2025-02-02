@@ -4,9 +4,9 @@
     .version = "0.0.1",
 
     .dependencies = .{
-        .bencode = .{
-            .url = "git+https://github.com/4zv4l/zbencode#9d2b9ef0b5442b76c50e745c24925c6b63fa0e47",
-            .hash = "1220cbbce78984195ed81fa737bec414fb385cb85b3c6176ecf2072f1b8c586fe1aa",
+        .zbencode = .{
+            .url = "git+https://github.com/4zv4l/zbencode#0a8a3888a514424949fd0bf9199856849662af18",
+            .hash = "1220e49c1c1a6e4d761f0b8012287239864a70c5025df7fa434342c5e7b61219d5cd",
         },
     },
 
